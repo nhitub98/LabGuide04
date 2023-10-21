@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav#mainNav{
+    background: #ccc; 
+    border-radius: 5px; 
+}
+nav#mainNav ul{
+    padding:0;
+    margin:0;
+    display: flex;
+    
+}
+nav#mainNav ul li{
+    list-style: none; 
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+nav#mainNav ul li a{
+    display: block;
+    padding: 0 25px;
+    line-height: 50px;
+    text-decoration: none;
+}
+.selected,nav#mainNav ul li a:hover{
+    background: red;
+    color: #fff;
+}
+nav#mainNav ul li:first-child {
+    border-left: none; 
+}
+nav#mainNav> ul li:first-child a{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+nav#mainNav li ul{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+}
+nav#mainNav li>ul li{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+    text-align: left;
+}
+nav#mainNav li>ul li:first-child a{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+nav#mainNav li>ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+nav#mainNav li>ul li:last-child a{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav#mainNav  li:hover > ul{
+    display:  block;
+}
+
+nav#mainNav  > ul li > ul li >ul{
+    margin-left: 352px;
+    margin-top: -50px;
+}
